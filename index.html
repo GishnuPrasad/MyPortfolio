@@ -5,11 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio — Gishnu Prasad</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap"
-    rel="stylesheet">
+  <meta name="description" content="Gishnu Prasad | Junior AI Engineer and Software Developer portfolio">
   <style>
     /* ── TOKENS ─────────────────────────────────────── */
     :root {
@@ -25,9 +21,9 @@
       --glow: 0 0 20px rgba(0, 240, 255, 0.4);
       --glow2: 0 0 40px rgba(0, 240, 255, 0.2);
       --radius: 8px;
-      --font-head: 'Orbitron', monospace;
-      --font-body: 'Rajdhani', sans-serif;
-      --font-mono: 'JetBrains Mono', monospace;
+      --font-head: 'Segoe UI', 'Arial Black', 'Trebuchet MS', sans-serif;
+      --font-body: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      --font-mono: 'Consolas', 'SFMono-Regular', 'Courier New', monospace;
     }
 
     /* ── RESET ───────────────────────────────────────── */
@@ -50,7 +46,21 @@
       font-size: 17px;
       line-height: 1.7;
       overflow-x: hidden;
-      cursor: none;
+      cursor: default;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
     }
 
     a {
@@ -61,48 +71,6 @@
     img {
       max-width: 100%;
       display: block;
-    }
-
-    /* ── CUSTOM CURSOR ───────────────────────────────── */
-    #cursor {
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none;
-      z-index: 9999;
-      width: 6px;
-      height: 6px;
-      background: var(--accent);
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-      transition: transform .15s ease-out, opacity .2s ease-out, background-color .15s, box-shadow .15s;
-      box-shadow: var(--glow);
-    }
-
-    body:hover #cursor {
-      opacity: 1;
-    }
-
-    /* ── CANVAS BACKGROUND ───────────────────────────── */
-    #canvas-bg {
-      position: fixed;
-      inset: 0;
-      z-index: 0;
-      pointer-events: none;
-    }
-
-    /* ── SCANLINE OVERLAY ────────────────────────────── */
-    body::after {
-      content: '';
-      position: fixed;
-      inset: 0;
-      z-index: 1;
-      background: repeating-linear-gradient(0deg,
-          transparent,
-          transparent 2px,
-          rgba(0, 0, 0, .06) 2px,
-          rgba(0, 0, 0, .06) 4px);
-      pointer-events: none;
     }
 
     /* ── LAYOUT ──────────────────────────────────────── */
@@ -1272,19 +1240,17 @@
   <!-- ── HERO ── -->
   <section id="hero">
     <div class="hero-inner">
-      <p class="hero-tag">// Hi</p>
+      <p class="hero-tag">// Junior AI Engineer</p>
       <div class="typewriter-wrap" id="typewriter-line"></div>
       <h1 class="hero-title">
         <span class="glitch" data-text="GISHNU PRASAD">GISHNU PRASAD</span><br>
-        <span class="glow-text">AI Engineer | Full-Stack Developer</span>
+        <span class="glow-text">Software Developer • AI Engineer</span>
       </h1>
       <p class="hero-sub">
-        As a Computer Science Engineer with expertise in Python and AI/ML, I am seeking an entry-level opportunity to
-        apply my skills, grow professionally, and contribute to innovative projects and position where I can leverage my
-        technical skills and creative problem-solving abilities. I am eager to contribute to innovative projects that
-        drive
-        technological advancement and look forward to bringing my enthusiasm and knowledge to a dynamic and
-        forward-thinking team.
+        Junior AI Engineer and Software Developer with hands-on experience building web applications and AI-powered
+        solutions. Skilled in Python, ME(A)RN stack, full-stack development, and integrating AI-driven and agentic
+        platforms. Experienced in developing scalable applications, automating workflows, and implementing intelligent,
+        user-focused features.
       </p>
 
       <div class="hero-cta">
@@ -1309,7 +1275,7 @@
             <div class="avatar-frame-corner tr"></div>
             <div class="avatar-frame-corner bl"></div>
             <div class="avatar-frame-corner br"></div>
-            <img src="p1.jpeg" alt="GISHNU PRASAD"
+            <img src="p1.jpeg" alt="GISHNU PRASAD" loading="lazy" decoding="async"
               style="width:100%; height:100%; object-fit:cover; border-radius:4px; position:relative; z-index:1;">
           </div>
           <div class="about-stats">
@@ -1335,42 +1301,42 @@
         <!-- Text -->
         <div class="about-text">
           <p class="section-label">// about_me</p>
-          <h2 class="section-title">Crafting Digital Realities</h2>
+          <h2 class="section-title">About Me</h2>
           <div class="section-divider"></div>
-          <p>Hey! I'm <strong style="color:#fff">Gishnu Prasad</strong>, a full-stack developer based in Kerala, India.
-            I specialize in building performant, accessible, and visually stunning web applications that solve
-            real-world problems.</p>
-          <p>I thrive at the intersection of engineering precision and design thinking — turning complex requirements
-            into clean, maintainable code and delightful user experiences.</p>
-          <p>When I'm not building things for the web, you'll find me exploring new technologies, contributing to
-            open-source, or sipping on filter coffee while reading about systems design.</p>
+          <p>Hey! I'm <strong style="color:#fff">Gishnu Prasad</strong>, a Junior AI Engineer and Software Developer
+            based in Pathanamthitta, Kerala, India. I build web applications and AI-powered solutions that combine
+            clean engineering with practical, user-focused product thinking.</p>
+          <p>My work spans full-stack development, AI integration, workflow automation, and the design of intelligent
+            features that solve real-world problems. I enjoy translating ideas into reliable software using modern
+            tools, scalable architecture, and industry best practices.</p>
+          <p>I’m especially interested in building systems that connect user experience, automation, and artificial
+            intelligence into seamless digital experiences.</p>
 
           <div class="terminal">
             <div class="terminal-line"><span class="prompt">$ </span><span class="cmd">whoami</span></div>
-            <div class="terminal-line"><span class="out">→ full-stack developer | ai enthusiast | open-source
-                contributor</span></div>
+            <div class="terminal-line"><span class="out">→ Junior AI Engineer | Software Developer</span></div>
             <div class="terminal-line" style="margin-top:.6rem"><span class="prompt">$ </span><span
                 class="cmd">location</span></div>
             <div class="terminal-line"><span class="out">→ Pathanamthitta, Kerala, India 🌴</span></div>
             <div class="terminal-line" style="margin-top:.6rem"><span class="prompt">$ </span><span
-                class="cmd">status</span></div>
-            <div class="terminal-line"><span class="out" style="color:#4f8">→ Available for freelance & full-time
-                opportunities</span></div>
+                class="cmd">focus</span></div>
+            <div class="terminal-line"><span class="out" style="color:#4f8">→ AI, full-stack web apps, workflow
+                automation</span></div>
           </div>
 
           <div class="about-tags" style="margin-top:1.5rem">
-            <span class="tag">React</span>
             <span class="tag">Python</span>
-            <span class="tag">RAG pipelines</span>
+            <span class="tag">ME(A)RN</span>
             <span class="tag">AI</span>
-            <span class="tag">CI/CD</span>
+            <span class="tag">RAG</span>
+            <span class="tag">React</span>
             <span class="tag">Node.js</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Python</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Java Basics</span>
-            <span class="tag">Figma</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Flask</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">CI/CD</span>
           </div>
         </div>
       </div>
@@ -1391,21 +1357,21 @@
           <div class="skill-card-icon">⚡</div>
           <div class="skill-card-title">Frontend Development</div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>React / Next.js</span><span>95%</span></div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-w="95"></div>
-            </div>
-          </div>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>TypeScript</span><span>90%</span></div>
+            <div class="skill-bar-label"><span>React</span><span>90%</span></div>
             <div class="skill-bar">
               <div class="skill-bar-fill" data-w="90"></div>
             </div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>CSS / Tailwind</span><span>92%</span></div>
+            <div class="skill-bar-label"><span>JavaScript</span><span>88%</span></div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-w="92"></div>
+              <div class="skill-bar-fill" data-w="88"></div>
+            </div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label"><span>UI/UX</span><span>80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-w="80"></div>
             </div>
           </div>
         </div>
@@ -1414,66 +1380,67 @@
           <div class="skill-card-icon">🛠️</div>
           <div class="skill-card-title">Backend & APIs</div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Node.js / Express</span><span>88%</span></div>
+            <div class="skill-bar-label"><span>Python</span><span>92%</span></div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-w="88"></div>
+              <div class="skill-bar-fill" data-w="92"></div>
             </div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Python / FastAPI</span><span>82%</span></div>
-            <div class="skill-bar">
-              <div class="skill-bar-fill" data-w="82"></div>
-            </div>
-          </div>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>GraphQL / REST</span><span>85%</span></div>
+            <div class="skill-bar-label"><span>Node.js</span><span>85%</span></div>
             <div class="skill-bar">
               <div class="skill-bar-fill" data-w="85"></div>
+            </div>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label"><span>Flask / FastAPI</span><span>84%</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-w="84"></div>
             </div>
           </div>
         </div>
 
         <div class="skill-card fade-in" style="transition-delay:.2s">
           <div class="skill-card-icon">🗄️</div>
-          <div class="skill-card-title">Databases & DevOps</div>
+          <div class="skill-card-title">Databases & Tools</div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>PostgreSQL / MongoDB</span><span>87%</span></div>
+            <div class="skill-bar-label"><span>MongoDB / MySQL</span><span>86%</span></div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-w="87"></div>
+              <div class="skill-bar-fill" data-w="86"></div>
             </div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Docker / Kubernetes</span><span>75%</span></div>
+            <div class="skill-bar-label"><span>Git / GitHub</span><span>90%</span></div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-w="75"></div>
+              <div class="skill-bar-fill" data-w="90"></div>
             </div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>AWS / Vercel</span><span>80%</span></div>
+            <div class="skill-bar-label"><span>Vercel / Firebase</span><span>78%</span></div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-w="80"></div>
+              <div class="skill-bar-fill" data-w="78"></div>
             </div>
           </div>
         </div>
+
         <div class="skill-card fade-in" style="transition-delay:.2s">
           <div class="skill-card-icon">🤖</div>
-          <div class="skill-card-title">AI</div>
+          <div class="skill-card-title">AI & Automation</div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>CI/CD / RAG</span><span>87%</span></div>
+            <div class="skill-bar-label"><span>AI/ML Tools</span><span>88%</span></div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-w="87"></div>
+              <div class="skill-bar-fill" data-w="88"></div>
             </div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Automation</span><span>75%</span></div>
+            <div class="skill-bar-label"><span>RAG / Agents</span><span>82%</span></div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-w="75"></div>
+              <div class="skill-bar-fill" data-w="82"></div>
             </div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Testing</span><span>80%</span></div>
+            <div class="skill-bar-label"><span>Automation</span><span>85%</span></div>
             <div class="skill-bar">
-              <div class="skill-bar-fill" data-w="80"></div>
+              <div class="skill-bar-fill" data-w="85"></div>
             </div>
           </div>
         </div>
@@ -1545,17 +1512,15 @@
             <div class="project-meta">
               <span class="project-num">#01</span>
               <div class="project-badges">
-                <span class="badge">YOLO</span>
+                <span class="badge">YOLOv8</span>
                 <span class="badge">OpenCV</span>
-                <span class="badge">React</span>
+                <span class="badge">PyTorch</span>
               </div>
             </div>
-            <h3 class="project-title">Deep-Vision</h3>
-            <p class="project-desc">Al-Based Weapons and Violence Detection System, Built a real-time surveillance
-              system using YOLOv8 and SLOWFAST to detect violent
-              activities and weapons from CCTV video streams. Implemented using Python, OpenCV,
-              and PyTorch, with an automated WhatsApp alert mechanism to notify authorities
-              instantly when threats are detected.</p>
+            <h3 class="project-title">DeepVision</h3>
+            <p class="project-desc">Built a real-time surveillance system using YOLOv8 and SLOWFAST to detect violent
+              activities and weapons from CCTV video streams. The solution uses Python, OpenCV, and PyTorch, and sends
+              automated WhatsApp alerts when threats are detected.</p>
             <div class="project-links">
               <a href="https://github.com/nikhil-krishna-2003/CCTV-Weapons-and-Violence-Detection"
                 class="project-link">⌥ GitHub</a>
@@ -1573,17 +1538,16 @@
               <span class="project-num">#02</span>
               <div class="project-badges">
                 <span class="badge">Flutter</span>
+                <span class="badge">MongoDB</span>
                 <span class="badge">Node.js</span>
               </div>
             </div>
-            <h3 class="project-title">PetBuddy</h3>
-            <p class="project-desc">Developed a cross-platform mobile application using Flutter and MongoDB to
-              streamline pet profile management and health tracking.
-              • Implemented an automated notification system for vaccinations and feeding
-              schedules, ensuring timely care for pets.
-              . Integrated community features enabling users to share tips and discover local pet
-              services, fostering user engagement.
-            </p>
+            <h3 class="project-title">Pet Details & Caring App</h3>
+            <p class="project-desc">Developed a cross-platform application for pet profile management and health
+              tracking,
+              with automated reminders for vaccinations and feeding schedules, plus community features for sharing tips
+              and
+              discovering local pet services.</p>
             <div class="project-links">
               <a href="https://github.com/nikhil-krishna-2003/pet_buddy" class="project-link">⌥ GitHub</a>
             </div>
@@ -1593,49 +1557,28 @@
         <div class="project-card fade-in" style="transition-delay:.2s">
           <div class="project-thumb">
             <div class="grid-lines"></div>
-            <div class="project-thumb-icon">🏟️</div>
+            <div class="project-thumb-icon">🌤️</div>
           </div>
           <div class="project-body">
             <div class="project-meta">
               <span class="project-num">#03</span>
               <div class="project-badges">
-                <span class="badge">React</span>
-                <span class="badge">Python</span>
-              </div>
-            </div>
-            <h3 class="project-title">Turfina</h3>
-            <p class="project-desc">Turfina Sports Construction is a specialized sports infrastructure and surface
-              engineering firm operating across South Asia and the Gulf, with active operations and project setups
-              across Kerala. They design, build, and engineer high-performance synthetic turf pitches and outdoor sports
-              facilities.</p>
-            <div class="project-links">
-              <a href="https://turfina.com/" class="project-link">⌥ Website</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card fade-in" style="transition-delay:.2s">
-          <div class="project-thumb">
-            <div class="grid-lines"></div>
-            <div class="project-thumb-icon">🌤️</div>
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <span class="project-num">#04</span>
-              <div class="project-badges">
                 <span class="badge">Flask</span>
-                <span class="badge">Python</span>
+                <span class="badge">Pandas</span>
+                <span class="badge">JavaScript</span>
               </div>
             </div>
             <h3 class="project-title">Clima-Chance</h3>
             <p class="project-desc">Engineered a full-stack weather analysis tool using Python (Flask) to process user
-              queries and fetch global climate data.
-              • Designed an interactive frontend with Leaflet.js and Chart.js to visualize complex
-              statistical data on dynamic maps.</p>
+              queries and fetch global climate data. The project analyzes historical climate records and visualizes
+              results
+              with interactive maps and charts.</p>
             <div class="project-links">
               <a href="https://github.com/GishnuPrasad/rain" class="project-link">⌥ GitHub</a>
             </div>
           </div>
         </div>
+
         <div class="project-card fade-in" style="transition-delay:.2s">
           <div class="project-thumb">
             <div class="grid-lines"></div>
@@ -1643,44 +1586,77 @@
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span class="project-num">#05</span>
+              <span class="project-num">#04</span>
               <div class="project-badges">
                 <span class="badge">React</span>
                 <span class="badge">Python</span>
+                <span class="badge">AI</span>
               </div>
             </div>
             <h3 class="project-title">EmpireO.ai</h3>
-            <p class="project-desc">EmpireO.AI is an AI-powered operating system and platform designed for international
-              education, recruitment, and career development, with a primary focus on the Middle East and Africa (MEA)
-              region. It integrates eight core verticals—including study abroad programs, global hiring, agent networks,
-              and training—into a single ecosystem.</p>
+            <p class="project-desc">Built an AI-powered operating system and platform focused on international
+              education,
+              recruitment, and career development. It brings together multiple verticals to support key processes in the
+              MEA
+              market.</p>
             <div class="project-links">
-              <a href="https://empireo.ai/" class="project-link">⌥ Website</a>
-            </div>
-          </div>
-        </div>
-        <div class="project-card fade-in" style="transition-delay:.2s">
-          <div class="project-thumb">
-            <div class="grid-lines"></div>
-            <div class="project-thumb-icon">🌤️</div>
-          </div>
-          <div class="project-body">
-            <div class="project-meta">
-              <span class="project-num">#06</span>
-              <div class="project-badges">
-                <span class="badge">React</span>
-                <span class="badge">Python</span>
-              </div>
-            </div>
-            <h3 class="project-title">NewsMalayalam24 Clone</h3>
-            <p class="project-desc">Agentic Ai news Website</p>
-            <div class="project-links">
-              <a href="https://newsmalayalam24.vercel.app" class="project-link">⌥ Website</a>
+              <a href="https://empireo.ai" class="project-link">⌥ Website</a>
             </div>
           </div>
         </div>
 
+        <div class="project-card fade-in" style="transition-delay:.2s">
+          <div class="project-thumb">
+            <div class="grid-lines"></div>
+            <div class="project-thumb-icon">📰</div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-num">#05</span>
+              <div class="project-badges">
+                <span class="badge">React</span>
+                <span class="badge">Python</span>
+                <span class="badge">AI</span>
+              </div>
+            </div>
+            <h3 class="project-title">NewsMalayalam24 Clone AI</h3>
+            <p class="project-desc">Developed a fully AI-powered news website built with React and Python, focused on
+              fast,
+              modern content delivery and intelligent presentation.</p>
+            <div class="project-links">
+              <a href="https://github.com/GishnuPrasad" class="project-link">⌥ GitHub</a>
+            </div>
+          </div>
+        </div>
+        . It integrates eight core verticals—including study abroad programs, global hiring, agent networks,
+        and training—into a single ecosystem.</p>
+        <div class="project-links">
+          <a href="https://empireo.ai/" class="project-link">⌥ Website</a>
+        </div>
       </div>
+    </div>
+    <div class="project-card fade-in" style="transition-delay:.2s">
+      <div class="project-thumb">
+        <div class="grid-lines"></div>
+        <div class="project-thumb-icon">🌤️</div>
+      </div>
+      <div class="project-body">
+        <div class="project-meta">
+          <span class="project-num">#06</span>
+          <div class="project-badges">
+            <span class="badge">React</span>
+            <span class="badge">Python</span>
+          </div>
+        </div>
+        <h3 class="project-title">NewsMalayalam24 Clone</h3>
+        <p class="project-desc">Agentic Ai news Website</p>
+        <div class="project-links">
+          <a href="https://newsmalayalam24.vercel.app" class="project-link">⌥ Website</a>
+        </div>
+      </div>
+    </div>
+
+    </div>
     </div>
   </section>
 
@@ -1698,27 +1674,26 @@
           <div class="experience-header">
             <div>
               <h3 class="experience-title">Junior AI Engineer</h3>
-              <p class="experience-company">CODNOV.AI</p>
+              <p class="experience-company">Codnov AI Private Limited</p>
             </div>
             <div class="experience-duration">June 2026 - Present</div>
           </div>
 
-          <p class="experience-desc">I have hands-on experience in software development, contributing to real-world
-            projects across web applications and AI-powered solutions. I have worked with modern full-stack technologies
-            to design, develop, test, and deploy scalable applications. My experience also includes building and
-            integrating AI-driven and agentic platforms, automating workflows, developing intelligent features, and
-            creating user-focused solutions. I am comfortable collaborating in team environments, solving complex
-            technical problems, and delivering reliable software using industry best practices.</p>
+          <p class="experience-desc">I am contributing to real-world web applications and AI-powered solutions, working
+            across modern full-stack development and AI integrations. My responsibilities include designing and
+            developing scalable applications, automating workflows, building intelligent features, and creating
+            user-focused solutions using industry best practices. I also collaborate closely with teams to solve
+            technical challenges and deliver reliable software.</p>
 
           <div class="experience-skills">
-            <span class="skill-tag">RAG</span>
-            <span class="skill-tag">Vercel V0</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">AI</span>
+            <span class="skill-tag">ME(A)RN</span>
             <span class="skill-tag">CI/CD</span>
-            <span class="skill-tag">GitHub</span>
-            <span class="skill-tag">Google Cloud</span>
-            <span class="skill-tag">Pipelines</span>
-            <span class="skill-tag">Full-Stack Dev</span>
-            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Full-Stack</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Automation</span>
           </div>
         </div>
 
@@ -1745,7 +1720,7 @@
           <a href="./files/ResumeGishnu.pdf" class="btn btn-primary" download>
             <span>⬇ Download PDF</span>
           </a>
-          <a href="./files/ResumeGishnu.pdf" class="btn btn-outline" target="_blank">
+          <a href="./files/Gishnu_Prasad_Combined_Resume_Updated.pdf" class="btn btn-outline" target="_blank">
             <span>👁 View Online</span>
           </a>
         </div>
@@ -1830,11 +1805,10 @@
   </footer>
 
   <!-- ── SCRIPTS ── -->
-  <!-- EmailJS Library -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
-
   <script>
     document.body.classList.add('js-ready');
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     function revealContent() {
       document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
@@ -1843,156 +1817,35 @@
       });
     }
 
-    let emailJsReady = false;
-    const emailJsPublicKey = "HKT440qqHr0Ow2dZI";
-
-    function initEmailJS() {
-      if (window.emailjs && typeof window.emailjs.init === 'function' && typeof window.emailjs.send === 'function') {
-        try {
-          window.emailjs.init(emailJsPublicKey);
-          emailJsReady = true;
-        } catch (error) {
-          console.error('EmailJS initialization failed:', error);
-          emailJsReady = false;
-        }
-      }
-    }
-
-    function loadEmailJSScript() {
-      const existingScript = document.querySelector('script[src*="emailjs/browser"]');
-      if (window.emailjs && typeof window.emailjs.init === 'function') {
-        initEmailJS();
-        return;
-      }
-      if (existingScript) {
-        existingScript.addEventListener('load', initEmailJS);
-        existingScript.addEventListener('error', () => {
-          console.warn('EmailJS library did not load. The page content will still work, but the contact form cannot send emails right now.');
-          emailJsReady = false;
-        });
-      } else {
-        console.warn('EmailJS script tag is missing. Contact form mail sending will not work.');
-      }
-    }
-
-    loadEmailJSScript();
-
     /* Year */
     const yearEl = document.getElementById('year');
     if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-    /* Custom Cursor */
-    const cursor = document.getElementById('cursor');
-    let mx = 0, my = 0;
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-    function animCursor() {
-      cursor.style.left = mx + 'px';
-      cursor.style.top = my + 'px';
-      requestAnimationFrame(animCursor);
-    }
-    animCursor();
-    document.querySelectorAll('a,button,.skill-card,.project-card').forEach(el => {
-      el.addEventListener('mouseenter', () => {
-        cursor.style.transform = 'translate(-50%,-50%) scale(2)';
-        cursor.style.background = '#fff';
-        cursor.style.boxShadow = '0 0 10px #fff';
-      });
-      el.addEventListener('mouseleave', () => {
-        cursor.style.transform = 'translate(-50%,-50%) scale(1)';
-        cursor.style.background = 'var(--accent)';
-        cursor.style.boxShadow = 'var(--glow)';
-      });
-    });
-
-    /* Canvas Particles */
-    const canvas = document.getElementById('canvas-bg');
-    const ctx = canvas.getContext('2d');
-    let W, H, particles = [], mouseX = 0, mouseY = 0;
-
-    function resize() {
-      W = canvas.width = window.innerWidth;
-      H = canvas.height = window.innerHeight;
-    }
-    resize();
-    window.addEventListener('resize', resize);
-    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
-
-    function Particle() {
-      this.x = Math.random() * W;
-      this.y = Math.random() * H;
-      this.size = Math.random() * 1.5 + .3;
-      this.speedX = (Math.random() - .5) * .3;
-      this.speedY = (Math.random() - .5) * .3;
-      this.opacity = Math.random() * .5 + .1;
-      this.color = Math.random() > .6 ? '0,240,255' : '123,47,255';
-    }
-    Particle.prototype.update = function () {
-      this.x += this.speedX;
-      this.y += this.speedY;
-      if (this.x < 0 || this.x > W) this.speedX *= -1;
-      if (this.y < 0 || this.y > H) this.speedY *= -1;
-      const dx = mouseX - this.x, dy = mouseY - this.y;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist < 120) {
-        this.x -= dx * .01;
-        this.y -= dy * .01;
-      }
-    };
-    Particle.prototype.draw = function () {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(${this.color},${this.opacity})`;
-      ctx.fill();
-    };
-
-    for (let i = 0; i < 120; i++) particles.push(new Particle());
-
-    function drawLines() {
-      for (let i = 0; i < particles.length; i++) {
-        for (let j = i + 1; j < particles.length; j++) {
-          const dx = particles[i].x - particles[j].x;
-          const dy = particles[i].y - particles[j].y;
-          const d = Math.sqrt(dx * dx + dy * dy);
-          if (d < 140) {
-            ctx.beginPath();
-            ctx.moveTo(particles[i].x, particles[i].y);
-            ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(0,240,255,${.08 * (1 - d / 140)})`;
-            ctx.lineWidth = .5;
-            ctx.stroke();
-          }
-        }
-      }
-    }
-
-    function animate() {
-      ctx.clearRect(0, 0, W, H);
-      particles.forEach(p => { p.update(); p.draw(); });
-      drawLines();
-      requestAnimationFrame(animate);
-    }
-    animate();
-
     /* Typewriter */
-    const phrases = [
-      '> Hello, World! 👋',
-      '> I build beautiful software.',
-      '> Let\'s create something amazing.',
-      '> Open to new opportunities!'
-    ];
-    let pi = 0, ci = 0, deleting = false, tw = document.getElementById('typewriter-line');
-    function type() {
-      const phrase = phrases[pi];
-      if (!deleting) {
-        tw.innerHTML = phrase.slice(0, ++ci) + '<span class="cursor-blink"></span>';
-        if (ci === phrase.length) { deleting = true; setTimeout(type, 1800); return; }
-      } else {
-        tw.innerHTML = phrase.slice(0, --ci) + '<span class="cursor-blink"></span>';
-        if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
+    const tw = document.getElementById('typewriter-line');
+    if (tw && !prefersReducedMotion) {
+      const phrases = [
+        '> Hello, World! 👋',
+        '> I build beautiful software.',
+        '> Let\'s create something amazing.',
+        '> Open to new opportunities!'
+      ];
+      let pi = 0, ci = 0, deleting = false;
+      function type() {
+        const phrase = phrases[pi];
+        if (!deleting) {
+          tw.innerHTML = phrase.slice(0, ++ci) + '<span class="cursor-blink"></span>';
+          if (ci === phrase.length) { deleting = true; setTimeout(type, 1800); return; }
+        } else {
+          tw.innerHTML = phrase.slice(0, --ci) + '<span class="cursor-blink"></span>';
+          if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
+        }
+        setTimeout(type, deleting ? 40 : 70);
       }
-      setTimeout(type, deleting ? 40 : 70);
+      type();
+    } else if (tw) {
+      tw.textContent = '> Junior AI Engineer & Software Developer';
     }
-    type();
 
     /* Scroll Reveal */
     if ('IntersectionObserver' in window) {
@@ -2000,7 +1853,6 @@
         entries.forEach(e => {
           if (e.isIntersecting) {
             e.target.classList.add('visible');
-            /* Skill bars */
             e.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
               bar.style.width = (bar.dataset.w || 0) + '%';
             });
@@ -2012,12 +1864,38 @@
       revealContent();
     }
 
-    /* Contact form - Send Email */
+    /* Contact form */
+    let emailJsReady = false;
+    const emailJsPublicKey = 'HKT440qqHr0Ow2dZI';
+
+    function loadEmailJS() {
+      if (window.emailjs && typeof window.emailjs.init === 'function') {
+        window.emailjs.init(emailJsPublicKey);
+        emailJsReady = true;
+        return Promise.resolve();
+      }
+
+      return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js';
+        script.async = true;
+        script.onload = () => {
+          if (window.emailjs && typeof window.emailjs.init === 'function') {
+            window.emailjs.init(emailJsPublicKey);
+            emailJsReady = true;
+            resolve();
+          } else {
+            reject(new Error('EmailJS did not initialize.'));
+          }
+        };
+        script.onerror = () => reject(new Error('Unable to load EmailJS.'));
+        document.body.appendChild(script);
+      });
+    }
+
     function handleSubmit(e) {
       e.preventDefault();
       const btn = document.getElementById('submit-btn');
-
-      // Get form values
       const user_name = document.getElementById('user_name').value;
       const user_email = document.getElementById('user_email').value;
       const subject = document.getElementById('subject').value;
@@ -2027,52 +1905,49 @@
       btn.style.opacity = '.6';
 
       if (!emailJsReady) {
-        btn.textContent = 'Opening email client...';
-        btn.style.background = '#ff8c00';
-        btn.style.opacity = '1';
-
-        const subjectEncoded = encodeURIComponent(subject || 'New message from portfolio');
-        const bodyEncoded = encodeURIComponent(`Name: ${user_name}\nEmail: ${user_email}\n\n${message}`);
-        const mailtoLink = `mailto:gishnugp7117@gmail.com?subject=${subjectEncoded}&body=${bodyEncoded}`;
-        window.location.href = mailtoLink;
-
-        setTimeout(() => {
-          btn.textContent = 'Send Message →';
-          btn.style.background = '';
-        }, 3000);
-        return;
-      }
-
-      // Send email using EmailJS
-      window.emailjs.send("service_e7vdi9o", "template_tqhgkpn", {
-        to_email: "gishnugp7117@gmail.com",
-        from_name: user_name,
-        from_email: user_email,
-        subject: subject,
-        message: message
-      })
-        .then(function (response) {
-          console.log('Email sent successfully!', response);
-          btn.textContent = 'Message Sent! ✓';
-          btn.style.background = '#00ff88';
+        loadEmailJS().then(() => {
+          handleSubmit(e);
+        }).catch(() => {
+          const subjectEncoded = encodeURIComponent(subject || 'New message from portfolio');
+          const bodyEncoded = encodeURIComponent(`Name: ${user_name}\nEmail: ${user_email}\n\n${message}`);
+          window.location.href = `mailto:gishnugp7117@gmail.com?subject=${subjectEncoded}&body=${bodyEncoded}`;
+          btn.textContent = 'Opening email client...';
+          btn.style.background = '#ff8c00';
           btn.style.opacity = '1';
-          document.getElementById('contact-form').reset();
-
-          setTimeout(() => {
-            btn.textContent = 'Send Message →';
-            btn.style.background = '';
-          }, 3000);
-        }, function (error) {
-          console.error('Email send failed:', error);
-          btn.textContent = 'Error Sending! ✗';
-          btn.style.background = '#ff4444';
-          btn.style.opacity = '1';
-
           setTimeout(() => {
             btn.textContent = 'Send Message →';
             btn.style.background = '';
           }, 3000);
         });
+        return;
+      }
+
+      window.emailjs.send('service_e7vdi9o', 'template_tqhgkpn', {
+        to_email: 'gishnugp7117@gmail.com',
+        from_name: user_name,
+        from_email: user_email,
+        subject: subject,
+        message: message
+      }).then(function () {
+        btn.textContent = 'Message Sent! ✓';
+        btn.style.background = '#00ff88';
+        btn.style.opacity = '1';
+        document.getElementById('contact-form').reset();
+
+        setTimeout(() => {
+          btn.textContent = 'Send Message →';
+          btn.style.background = '';
+        }, 3000);
+      }, function () {
+        btn.textContent = 'Error Sending! ✗';
+        btn.style.background = '#ff4444';
+        btn.style.opacity = '1';
+
+        setTimeout(() => {
+          btn.textContent = 'Send Message →';
+          btn.style.background = '';
+        }, 3000);
+      });
     }
   </script>
 </body>
